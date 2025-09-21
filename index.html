@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List 📝</title>
+    <link rel="stylesheet" href="to-do.css">
+</head>
+<body>
+    <div class="top-bar">
+        <span class="top-bar-content">
+            TO DO LIST
+        </span>
+        
+    </div>
+    
+    <div class="content">
+        <div id="new-task">
+            <input type="text" id="newTask" placeholder="Enter a new task...">
+            <button id="btn1" onclick="newtaskinput()">+</button>
+            <button id="btn" onclick="checkStatus()">👍</button>
+        </div>
+        
+        <div id="to-do-list">
+            <div id="list">
+                <ul id="inner-list">
+                </ul>                
+            </div>
+        </div>
+    </div>
+    
+    <div class="bottom-bar">
+        <div class="bottom-bar-content">
+            Made by ~ ☠ MDTH ☠
+        </div>
+    </div>
+    <script src="to-do.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+/* Top Bar */
+.top-bar{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(191, 3, 3);
+    border-bottom: 2px solid rgb(156, 4, 4);
+}
+
+.top-bar-content{
+    background-color: rgb(225, 37, 37);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    color: rgb(145, 1, 1);
+}
+
+
+
+
+/* Main Content */
+
+.content{
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#new-task{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+#new-task input{
+    border: 3px solid rgb(228, 79, 79);
+    border-radius: 5px;
+    background-color: rgb(245, 89, 89);
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#new-task input::placeholder{
+    color: rgb(74, 16, 16);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#new-task button{
+    border: 2px solid rgb(224, 72, 72);
+    border-radius: 50%;
+    font-size:larger;
+    background-color: rgb(237, 114, 114);
+}
+#new-task button:active{
+    background-color: brown;
+}
+
+#to-do-list{
+    display: flex;
+    width: 100vw;
+    flex-grow: 1;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#list{
+    height: clamp(100px, 400px, 600px);
+    width: clamp(100px, 400px, 500px);
+    border: 1px solid rgb(197, 25, 6);
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2); /* semi-transparent white */
+    backdrop-filter: blur(10px);          /* frosted glass blur */ 
+    box-shadow: 0 0 5px rgb(219, 69, 39),          /* small glow */
+                0 0 10px rgb(183, 28, 25),         /* medium glow */
+                0 0 20px rgb(149, 7, 5),         /* large glow */
+                0 0 40px rgb(98, 0, 0);         /* extra glow */
+}
+
+#list label{
+    padding: 10px;
+}
+
+#list ul li{
+    padding: 3px;
+    color: rgb(0, 0, 0);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+/* Bottom Bar */
+.bottom-bar{
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    background-color: rgb(191, 3, 3);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+}
+
+.bottom-bar-content{
+    padding: 5px;
+}
